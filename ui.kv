@@ -3,7 +3,6 @@
 
 # Referencia as telas com as classes
 MyScreenManager:
-	transition: SlideTransition(direction="right")
 	id: screen_manager
 
 	CustomerScreen:
@@ -25,8 +24,8 @@ MyScreenManager:
 			on_release: app.menu.open()
 
 		MDRaisedButton:
-			on_press:root.to_worker()
-			text:"To Worker"
+			on_press: root.to_worker()
+			text: "To Worker"
 			color:0,1.,0,1
 			size_hint:.33, .2
 			background_color:(0,0,1,1.)
